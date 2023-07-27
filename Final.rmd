@@ -47,28 +47,25 @@ numerical display
 ##Results
 
 ```{r}
-maleData = filter (FinalData,"sex"=="M")
+maleData = filter (FinalData,sex == "M")
 ```
 
 ##Descriptive Results
-
-
 
 ##Graphical Descriptive Results
 
 
 ```{r}
-barchartGC(~infected + sex ,data=FinalData)
-barchartGC(~infected + sex ,data=FinalData, type="percent")
-
+barchartGC(~infected+treatment,data=maleData)
+barchartGC(~infected+treatment,data=maleData, type="percent")
 ```
 
-describe
+The graph shows among those who have covid vaccine, the people who did get the placebo and vaccine there was no real difference. Among the people who did take the drug, the people who had the vaccine, there was no significant difference.
 
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + sex, data=FinalData)
+table1 <- xtabs(~infected + treatment, data=maleData)
 rowPerc(table1)
 colPerc(table1)
 ```
@@ -100,7 +97,7 @@ numerical display
 ##Results
 
 ```{r}
-femaleData = filter(FinalData, "sex" == "F")
+femaleData = filter(FinalData, sex == "F")
 ```
 
 ##Descriptive Results
@@ -108,15 +105,14 @@ femaleData = filter(FinalData, "sex" == "F")
 ##Graphical Descriptive Results
 
 ```{r}
-barchartGC(~infected + sex ,data=FinalData)
-barchartGC(~infected + sex ,data=FinalData, type="percent")
-
+barchartGC(~infected+treatment,data=femaleData)
+barchartGC(~infected+treatment,data=femaleData, type="percent")
 ```
 
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + sex, data=FinalData)
+table1 <- xtabs(~infected + treatment, data=femaleData)
 rowPerc(table1)
 colPerc(table1)
 ```
@@ -146,7 +142,7 @@ numerical display
 ##Results
 
 ```{r}
-LGBTQData = filter(FinalData, "LGBTQ" == "gay")
+LGBTQData = filter(FinalData, LGBTQ == "gay")
 ```
 
 ##Descriptive Results
@@ -154,9 +150,8 @@ LGBTQData = filter(FinalData, "LGBTQ" == "gay")
 ##Graphical Descriptive Results
 
 ```{r}
-barchartGC(~infected + LGBTQ ,data=FinalData)
-barchartGC(~infected + LGBTQ ,data=FinalData, type="percent")
-
+barchartGC(~infected+treatment,data=LGBTQData)
+barchartGC(~infected+treatment,data=LGBTQData, type="percent")
 ```
 
 describe
@@ -164,7 +159,7 @@ describe
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + LGBTQ, data=FinalData)
+table1 <- xtabs(~infected + treatment, data=LGBTQData)
 rowPerc(table1)
 colPerc(table1)
 ```
@@ -194,7 +189,7 @@ numerical display
 ##Results
 
 ```{r}
-DruggiesData = filter(FinalData, "DrugUser" == "yes")
+DruggiesData = filter(FinalData, DrugUser == "yes")
 ```
 
 ##Descriptive Results
@@ -202,9 +197,8 @@ DruggiesData = filter(FinalData, "DrugUser" == "yes")
 ##Graphical Descriptive Results
 
 ```{r}
-barchartGC(~infected + DrugUser ,data=FinalData)
-barchartGC(~infected + DrugUser ,data=FinalData, type="percent")
-
+barchartGC(~infected+treatment,data=DruggiesData)
+barchartGC(~infected+treatment,data=DruggiesData, type="percent")
 ```
 
 describe
@@ -212,7 +206,7 @@ describe
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + DrugUser, data=FinalData)
+table1 <- xtabs(~infected + treatment, data=DruggiesData)
 rowPerc(table1)
 colPerc(table1)
 ```

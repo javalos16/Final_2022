@@ -56,7 +56,7 @@ barchartGC(~infected+treatment,data=maleData)
 barchartGC(~infected+treatment,data=maleData, type="percent")
 ```
 
-The graph shows among those who have covid vaccine, the people who did get the placebo and vaccine there was no real difference. Among the people who did take the drug, the people who had the vaccine, there was no significant difference.
+The graph shows among those who have covid vaccine, the people who did get vaccine there was a difference. Meanwhile Among the people who were OK that toke the vaccine, there was no significant difference.
 
 ##Numerical Descriptive Results
 
@@ -66,9 +66,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-
-
-Among the people who had covid vaccine as many did have aids with the placebo then the people who received treatment. Among the people that had the drug they were more likely to not have aids. 
+Among the people who toke the vaccine while they have Covid there was a 2X difference. The people that took the placebo with 70% chance of not being infected and 30% less likely for the peolple that took the vaccine. Among the people that were Ok and took the vaccine there was no significant difference. 
 
 ##Inferential Results
 
@@ -77,6 +75,13 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+
+
+The Chi-squared value is .00000000000004631 is too small, so vaccine is effective in preventing spread of vaccine among drug users.
+
+Based on the Fisher's Exact vaccine  you are 0.35 less likely to get aids. 
+
+We will reject the null hypothesis.If you take the placebo you are 3X more likely to have aids.
 
 ## Females
 

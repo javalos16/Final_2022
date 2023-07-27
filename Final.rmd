@@ -13,11 +13,7 @@ date: "`r Sys.Date()`"
 require(tidyverse)
 require(tigerstats)
 require(forcats)
-FinalDat <-read.csv(file="final.csv",header=TRUE)
-#recode to remove the annoying "X" from the dataframe
-FinalData <- FinalDat  %>% select(-one_of("X"))
-FinalData <- FinalData %>%
-mutate(across(where(is.character), as.factor))
+FinalData <-read.csv(file="final.csv",header=TRUE)
 ```
 
 # Introduction
@@ -70,7 +66,9 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-describe
+
+
+Among the people who had covid vaccine as many did have aids with the placebo then the people who received treatment. Among the people that had the drug they were more likely to not have aids. 
 
 ##Inferential Results
 
@@ -119,6 +117,11 @@ colPerc(table1)
 
 ##Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 ## LGBTQ
 

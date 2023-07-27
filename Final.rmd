@@ -72,6 +72,11 @@ Among the people who had covid vaccine as many did have aids with the placebo th
 
 ##Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 ## Females
 
@@ -110,17 +115,17 @@ barchartGC(~infected+treatment,data=femaleData, type="percent")
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + treatment, data=femaleData)
-rowPerc(table1)
-colPerc(table1)
+table2 <- xtabs(~infected + treatment, data=femaleData)
+rowPerc(table2)
+colPerc(table2)
 ```
 
 ##Inferential Results
 
 ```{r}
-chisq.test(table1)
-chisqtestGC(table1)
-fisher.test(table1)
+chisq.test(table2)
+chisqtestGC(table2)
+fisher.test(table2)
 ```
 
 ## LGBTQ
@@ -162,13 +167,18 @@ describe
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + treatment, data=LGBTQData)
-rowPerc(table1)
-colPerc(table1)
+table3 <- xtabs(~infected + treatment, data=LGBTQData)
+rowPerc(table3)
+colPerc(table3)
 ```
 
 ##Inferential Results
 
+```{r}
+chisq.test(table3)
+chisqtestGC(table3)
+fisher.test(table3)
+```
 
 ## Druggies
 
@@ -209,9 +219,9 @@ describe
 ##Numerical Descriptive Results
 
 ```{r}
-table1 <- xtabs(~infected + treatment, data=DruggiesData)
-rowPerc(table1)
-colPerc(table1)
+table4 <- xtabs(~infected + treatment, data=DruggiesData)
+rowPerc(table4)
+colPerc(table4)
 ```
 
 describe
@@ -222,15 +232,15 @@ describe
 
 
 ```{r}
-chisq.test(table1)
-chisqtestGC(table1)
-fisher.test(table1)
+chisq.test(table4)
+chisqtestGC(table4)
+fisher.test(table4)
 ```
 
 
-The Chi-squared value is p-value = .000000000000002178 is too small, so vaccine is not effective in preventing spread of Covid among other people.
+The Chi-squared value is p-value = .000000000232 is too small, so vaccine is not effective in preventing spread of Covid among other people.
 
-Based on the Fisher's Exact vaccine  you are 1.84 less likely to get covid. 
+Based on the Fisher's Exact vaccine  you are 0.126 less likely to get covid. 
 
 We will Approve the null hypothesis. The information provided shows that the vaccine does not prevent the spread of Covid.
 

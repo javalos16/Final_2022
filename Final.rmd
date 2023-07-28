@@ -24,9 +24,9 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
-$H_0$; The vaccine is not effective in preventing the spread of Covid in males
+$H_0$; The vaccine is not effective in preventing Covid in males
 
-$H_A$; The vaccine is effective in preventing the spread of Covid in males 
+$H_A$; The vaccine is effective in preventing Covid in males 
 
 Data for this study came from a FinalData file, provided by the professor.
 
@@ -85,9 +85,9 @@ We will fail to reject the null hypothesis.If you take the placebo or covid you 
 
 ## Females
 
-$H_0$; The vaccine is not effective in preventing the spread of Covid in Females
+$H_0$; The vaccine is not effective in preventing Covid in Females
 
-$H_A$; The vaccine is effective in preventing the spread of Covid in Females 
+$H_A$; The vaccine is effective in preventing Covid in Females 
 
 Data for this study came from a FinalData file, provided by the professor.
 
@@ -147,9 +147,9 @@ We will fail to reject the null hypothesis.If you take the placebo or covid you 
 
 ## LGBTQ
 
-$H_0$; The vaccine is not effective in preventing the spread of Covid in LGBTQ
+$H_0$; The vaccine is not effective in preventing Covid in LGBTQ
 
-$H_A$; The vaccine is effective in preventing the spread of Covid in LGBTQ 
+$H_A$; The vaccine is effective in preventing Covid in LGBTQ 
 
 Data for this study came from a FinalData file, provided by the professor.
 
@@ -207,9 +207,9 @@ We will fail to reject the null hypothesis.If you take the placebo or covid you 
 
 ## Druggies
 
-$H_0$; The vaccine is not effective in preventing the spread of Covid in Druggies
+$H_0$; The vaccine is not effective in preventing Covid in Druggies
 
-$H_A$; The vaccine is effective in preventing the spread of Covid in Druggies 
+$H_A$; The vaccine is effective in preventing Covid in Druggies 
 
 Data for this study came from a FinalData file, provided by the professor.
 
@@ -268,7 +268,7 @@ The Chi-squared value is p-value = 0.000000002842 is too small, so vaccine is no
 
 Based on the Fisher's Exact vaccine  you are 0.000000000232 less likely to get covid. 
 
-We will we fail to reject the null hypothesis. The information provided shows that the vaccine does not prevent the spread of Covid.
+We will we fail to reject the null hypothesis. The information provided shows that the vaccine does not prevent Covid.
 
 
 

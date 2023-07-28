@@ -56,7 +56,7 @@ barchartGC(~infected+treatment,data=maleData)
 barchartGC(~infected+treatment,data=maleData, type="percent")
 ```
 
-The graph shows among those who had covid , the males who did got vaccine there was a difference between 30% with covid and 70% with placebo. Meanwhile Among the people who were OK that toke the vaccine, there was no significant difference.
+The graph shows among those who got covid , the males who did got vaccine there was a difference between 30% with covid and 70% with placebo. Meanwhile Among the people who were OK that toke the vaccine, there was no significant difference.
 
 ##Numerical Descriptive Results
 
@@ -66,7 +66,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-Among the people who toke the vaccine that had Covid there was a 2X difference. The people that took the placebo with 70% chance of not being infected and 30% less likely for the peolple that took the vaccine. Among the people that were Ok and took the vaccine there was no significant difference. 
+Among the people who toke the vaccine that got Covid there was a 2X difference. The people that took the placebo with 70% chance of not being infected and 30% less likely for the peolple that took the vaccine. Among the people that were Ok and took the vaccine there was no significant difference. 
 
 ##Inferential Results
 
@@ -77,11 +77,11 @@ fisher.test(table1)
 ```
 
 
-The Chi-squared value is .0000000000001098 is too small, so vaccine is not effective in preventing spread of vaccine among males.
+The Chi-squared value is .0000000000001098 is too small, so vaccine is not effective in preventing covid among males.
 
 Based on the Fisher's Exact  you are P-value:0.00000000000004631 less likely to get covid. 
 
-We will Agree with the null hypothesis.If you take the placebo or covid you are in the same likely hood of receiving covid if you are a male.
+We will fail to reject the null hypothesis.If you take the placebo or covid you are in the same likely hood of receiving covid if you are a male.
 
 ## Females
 
@@ -117,7 +117,7 @@ barchartGC(~infected+treatment,data=femaleData)
 barchartGC(~infected+treatment,data=femaleData, type="percent")
 ```
 
-The graph shows among those who had covid , the females who did got vaccine there was a difference of about 40% with covid and 60% placebo. Meanwhile Among the people who were OK that toke the vaccine, there was no significant difference.
+The graph shows among those who had covid , the females who did get vaccineted there was a difference of about 40% with covid and 60% placebo. Meanwhile Among the females who were OK that toke the vaccine, there was no significant difference.
 
 
 ##Numerical Descriptive Results
@@ -128,7 +128,7 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
-Among the females who toke the vaccine that had Covid there was a 20% difference in those who are vaccinated. The people that took the placebo with 20% more chance of being infected. Among the people that were Ok and took the vaccine there was no significant difference. 
+Among the females who toke the vaccine that took the Covid vaccine there was a 20% difference in those who are vaccinated. The people that took the placebo with 20% more chance of being infected. Among the people that were Ok and took the vaccine there was no significant difference. 
 
 ##Inferential Results
 
@@ -138,11 +138,11 @@ chisqtestGC(table2)
 fisher.test(table2)
 ```
 
-The Chi-squared value is 0.0002732 is too small, so vaccine is not effective in preventing spread of vaccine among males.
+The Chi-squared value is 0.0002732 is too small, so vaccine is not effective in preventing covid among males.
 
 Based on the Fisher's Exact  you are P-value:0.0002162 less likely to get covid. 
 
-We will Agree with the null hypothesis.If you take the placebo or covid you are in the same likely hood of receiving covid if you are a female.
+We will fail to reject the null hypothesis.If you take the placebo or covid you are in the same likely hood of receiving covid if you are a female.
 
 
 ## LGBTQ
@@ -179,7 +179,7 @@ barchartGC(~infected+treatment,data=LGBTQData)
 barchartGC(~infected+treatment,data=LGBTQData, type="percent")
 ```
 
-describe
+The graph shows among those who had covid , the LGBTQ who did got vaccine there was a difference between 80% with covid and 20% with placebo. Meanwhile Among the people who were OK that toke the vaccine, there was no significant difference.
 
 ##Numerical Descriptive Results
 
@@ -189,6 +189,8 @@ rowPerc(table3)
 colPerc(table3)
 ```
 
+Among the people who toke the vaccine that had Covid there was a 40% difference in those who got covid. The people that took the placebo with 20% chance of not being infected and 80% less likely for the peolple that took the vaccine. Among the people that were Ok and took the vaccine there was no significant difference. 
+
 ##Inferential Results
 
 ```{r}
@@ -196,6 +198,12 @@ chisq.test(table3)
 chisqtestGC(table3)
 fisher.test(table3)
 ```
+
+The Chi-squared value is 0.00000006668 is too small, so vaccine is not effective in preventing spread of vaccine among LGBTQ.
+
+Based on the Fisher's Exact  you are P-value:0.00000000000004631 less likely to get covid. 
+
+We will fail to reject the null hypothesis.If you take the placebo or covid you are in the same likely hood of receiving covid if you are a LGBTQ.
 
 ## Druggies
 
@@ -231,7 +239,7 @@ barchartGC(~infected+treatment,data=DruggiesData)
 barchartGC(~infected+treatment,data=DruggiesData, type="percent")
 ```
 
-describe
+The graph shows among those who had covid , the Druggies who did get vaccineted there was a difference between 88% with covid and 12% with placebo. Meanwhile Among the people who were OK that toke the vaccine, there was no significant difference.
 
 ##Numerical Descriptive Results
 
@@ -241,7 +249,8 @@ rowPerc(table4)
 colPerc(table4)
 ```
 
-describe
+Among the Druggies who toke the vaccine that got Covid there was a difference. The Druggies that took the placebo with 12% chance of not being infected and 88% less likely for the Druggies that took the vaccine. Among the people that were Ok and took the vaccine there was no significant difference. 
+
 
 ## Inferential Results
 
@@ -255,15 +264,15 @@ fisher.test(table4)
 ```
 
 
-The Chi-squared value is p-value = .000000000232 is too small, so vaccine is not effective in preventing spread of Covid among other people.
+The Chi-squared value is p-value = 0.000000002842 is too small, so vaccine is not effective in preventing spread of Covid among other people.
 
-Based on the Fisher's Exact vaccine  you are 0.126 less likely to get covid. 
+Based on the Fisher's Exact vaccine  you are 0.000000000232 less likely to get covid. 
 
-We will Approve the null hypothesis. The information provided shows that the vaccine does not prevent the spread of Covid.
+We will we fail to reject the null hypothesis. The information provided shows that the vaccine does not prevent the spread of Covid.
 
 
 
 # Overall Results and Conclusions
 
-The original question was, is the vaccine effective in preventing the spread of Covid. Base on Data provided we have found that the vaccine is not effective in stoping the spread of Covid.
+The original question was, is the vaccine effective in preventing Covid. Base on Data provided we have found that the vaccine is not effective in stoping the spread of Covid.
 

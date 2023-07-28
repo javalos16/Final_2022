@@ -274,5 +274,5 @@ We will we fail to reject the null hypothesis. The information provided shows th
 
 # Overall Results and Conclusions
 
-The original question was, is the vaccine effective in preventing Covid. Base on Data provided we have found that the vaccine is not effective in stoping the spread of Covid.
+The original question was, is the covid vaccine effective in preventing Covid. Base on Data provided we have found that the vaccine is not effective in preventing Covid. We fail to reject the null based on data provided. 
 

@@ -66,7 +66,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-Among the people who toke the vaccine that got Covid there was a 2X difference. The people that took the placebo with 70% chance of not being infected and 30% less likely for the peolple that took the vaccine. Among the people that were Ok and took the vaccine there was no significant difference. 
+Among the people that took the placebo with 70% got covid and 30% did get covid, even with treatment. Among the people that were Ok and took the vaccine there was no significant difference. 
 
 ##Inferential Results
 
